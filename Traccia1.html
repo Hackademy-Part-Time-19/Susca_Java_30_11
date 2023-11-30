@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+<style>
+.body {background-color: black;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: white;
+}
+
+
+.buttonStyle {
+border-radius: 20px;
+background-color: blanchedalmond;
+cursor: pointer;
+}
+
+.grassetto {
+    font-weight: bolder;
+}
+.cambiacolore {
+color: blue;
+}
+
+.scomparire{
+    display: none;
+}
+
+</style>
+<body class="body">
+
+<p> Nel pattinaggio artistico su ghiaccio, nome di alcuni esercizi facenti parte delle 17 figure obbligatorie di scuola, che vengono eseguiti prima su uno e poi sull'altro piede, descrivendo un tracciato simile a due cerchi giustapposti.
+</p>    
+
+<p> Nel pattinaggio artistico su ghiaccio, nome di alcuni esercizi facenti parte delle 17 figure obbligatorie di scuola, che vengono eseguiti prima su uno e poi sull'altro piede, descrivendo un tracciato simile a due cerchi giustapposti.
+</p>    
+
+<p> Nel pattinaggio artistico su ghiaccio, nome di alcuni esercizi facenti parte delle 17 figure obbligatorie di scuola, che vengono eseguiti prima su uno e poi sull'altro piede, descrivendo un tracciato simile a due cerchi giustapposti.
+</p>    
+
+
+
+<br><br>
+<button onclick="cambiacolore()"class="buttonStyle"> Change Color </button>
+<br><br>
+<button onclick="BoldText()" class="buttonStyle"> Bold Text </button>
+<br><br>
+<button onclick="Magic()" class="buttonStyle"> Magic </button>
+
+<script>
+function BoldText(){
+            let paragrafi
+            paragrafi = document.getElementsByTagName("p")
+            for (let i = 0; i < paragrafi.length; i++) {
+
+                paragrafi[i].classList.add("grassetto")
+            }
+        };
+        function cambiacolore(){
+            let paragrafi
+            paragrafi = document.getElementsByTagName("p")
+            for (let i = 0; i < paragrafi.length; i++) {
+
+                paragrafi[i].classList.add("cambiacolore")
+            }
+        }
+        function Magic(){
+            let paragrafi
+            paragrafi = document.getElementsByTagName("p")
+            for (let i = 0; i < paragrafi.length; i++) {
+
+                paragrafi[i].classList.add("scomparire")
+            }
+        }
+
+</script>
+</body>
+</html>
